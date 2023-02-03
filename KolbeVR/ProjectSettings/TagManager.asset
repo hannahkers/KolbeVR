@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Left Hand
   - Right Hand
+  - follow_this
   layers:
   - Default
   - TransparentFX
