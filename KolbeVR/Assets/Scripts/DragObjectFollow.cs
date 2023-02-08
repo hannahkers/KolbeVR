@@ -8,8 +8,10 @@ public class DragObjectFollow : MonoBehaviour
     public float speed = 1;
     public float range = .01f;
     public float disrange = .1f;
-    public float dis = 0;
+    private float dis = 0;
     public Rigidbody followrb;
+    private Vector2 xandy_dis = new Vector2(0,0);
+    public Vector2 xandy_disrange = new Vector2(.2f, .2f);
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +24,9 @@ public class DragObjectFollow : MonoBehaviour
     void Update()
     {
         caluate_dis();
-        if (dis < disrange)
+        caluate_xdis();
+        caluate_ydis();
+        if (dis < disrange && xandy_dis.x < xandy_disrange.x && xandy_dis.y < xandy_disrange.y)
         {
             movement();
             followrb.useGravity = false;
@@ -41,6 +45,25 @@ public class DragObjectFollow : MonoBehaviour
     {
         dis = Vector3.Distance(this.transform.gameObject.transform.position, follow_obj.transform.position);
     }
+
+    void caluate_xdis()
+    {
+        xandy_dis.x = this.transform.gameObject.transform.position.x - follow_obj.transform.position.x;
+        if (xandy_dis.x < 0)
+        {
+            xandy_dis.x = xandy_dis.x * -1;
+        }
+    }
+
+    void caluate_ydis()
+    {
+        xandy_dis.y = this.transform.gameObject.transform.position.y - follow_obj.transform.position.y;
+        if (xandy_dis.y < 0)
+        {
+            xandy_dis.y = xandy_dis.y * -1;
+        }
+    }
+
 
     void movement()
     {

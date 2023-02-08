@@ -2398,9 +2398,9 @@ MonoBehaviour:
   follow_obj: {fileID: 0}
   speed: 1
   range: 0.1
-  disrange: 1
-  dis: 0
+  disrange: 0.6
   followrb: {fileID: 0}
+  z_disrange: 0.4
 --- !u!54 &437624550
 Rigidbody:
   m_ObjectHideFlags: 0
