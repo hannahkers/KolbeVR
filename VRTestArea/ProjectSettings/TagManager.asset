@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Left Hand
-  - Right Hand
-  - follow_this
-  - KeypadButton
-  - Display
-  - Keypad
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -17,9 +11,9 @@ TagManager:
   - 
   - Water
   - UI
-  - Player
-  - Interactable
-  - Marker
+  - 
+  - 
+  - 
   - 
   - 
   - 
