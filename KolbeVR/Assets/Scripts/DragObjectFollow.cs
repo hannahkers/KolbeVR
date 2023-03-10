@@ -109,4 +109,16 @@ public class DragObjectFollow : MonoBehaviour
         here = this.gameObject.transform.position;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Better_end_point"))
+        {
+            this.transform.GetComponent<activate_next_puzzle>().next_puzzle();
+        }
+
+        if (other.CompareTag("lesser_end_point"))
+        {
+            this.transform.GetComponent<activate_next_puzzle>().next_puzzle_other();
+        }
+    }
 }
