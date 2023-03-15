@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Left Hand
+  - Right Hand
+  - follow_this
+  - weights
+  - pressure_plate
+  - KeypadButton
+  - Display
+  - Keypad
+  - Whiteboard
   layers:
   - Default
   - TransparentFX
@@ -11,9 +20,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Interactable
+  - Marker
   - 
   - 
   - 
