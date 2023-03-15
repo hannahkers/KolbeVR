@@ -38,14 +38,11 @@ public class CheckPressurePlates : MonoBehaviour
         }
     }
 
-
-
     void Check_if_all_pressure_plates_active()
     {
         if (number_activated_pressure_plates >= pressure_plates.Length)
         {
             all_plates_activated = true;
-            this.transform.GetComponent<activate_next_puzzle>().next_puzzle();
         }
         else
         {
