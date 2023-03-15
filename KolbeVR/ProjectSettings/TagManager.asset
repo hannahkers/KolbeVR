@@ -12,7 +12,8 @@ TagManager:
   - KeypadButton
   - Display
   - Keypad
-  - Whiteboard
+  - lesser_end_point
+  - better_end_point
   layers:
   - Default
   - TransparentFX
