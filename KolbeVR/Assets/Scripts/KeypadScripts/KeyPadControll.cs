@@ -9,6 +9,8 @@ public class KeyPadControll : MonoBehaviour
 
     public bool accessGranted = false;
 
+    public GameObject key;
+
 
     //Need code to substantiate a key or to open a door or box to next clue or puzzle
 
@@ -16,6 +18,7 @@ public class KeyPadControll : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        key.SetActive(false);
         //doorOpen = false
         
     }
@@ -27,6 +30,8 @@ public class KeyPadControll : MonoBehaviour
         {
             //action when correct code is entered
             //doorOpen = true;
+
+            key.SetActive(true);
             accessGranted = false;
 
 
