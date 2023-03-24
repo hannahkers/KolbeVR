@@ -14,6 +14,7 @@ TagManager:
   - Keypad
   - lesser_end_point
   - better_end_point
+  - check_op_array
   layers:
   - Default
   - TransparentFX

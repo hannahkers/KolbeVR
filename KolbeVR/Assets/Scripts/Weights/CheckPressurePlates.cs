@@ -45,7 +45,7 @@ public class CheckPressurePlates : MonoBehaviour
         if (number_activated_pressure_plates >= pressure_plates.Length)
         {
             all_plates_activated = true;
-            this.transform.GetComponent<activate_next_puzzle>().next_puzzle();
+            this.gameObject.GetComponent<Single_has_been_completed>().activate_has_been_done();
         }
         else
         {

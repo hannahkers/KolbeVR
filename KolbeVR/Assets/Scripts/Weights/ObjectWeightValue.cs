@@ -5,5 +5,7 @@ using UnityEngine;
 public class ObjectWeightValue : MonoBehaviour
 {
     public int weight = 1;
-    
+
+
+    public bool toucheding = false;
 }
