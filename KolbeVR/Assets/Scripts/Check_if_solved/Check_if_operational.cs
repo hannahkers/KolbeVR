@@ -10,6 +10,10 @@ public class Check_if_operational : MonoBehaviour
 
     private int num_tracker = 0;
 
+    public GameObject[] object_to_mark_off_on_the_list;
+
+    public string[] string_value_of_object;
+
     public void Check_if_done()
     {
         if(check_has_been_complete >= num_tracker)
@@ -29,10 +33,21 @@ public class Check_if_operational : MonoBehaviour
     }
 
     
-    public void has_been_completed()
+    public void has_been_completed(string obj_name)
     {
         check_has_been_complete = check_has_been_complete + 1;
         Check_if_done();
+    }
+
+    private void string_valuse(string obj_name)
+    {
+        for (int i = 0; i < string_value_of_object.Length; i++)
+        {
+            if (string_value_of_object[i] == obj_name)
+            {
+                object_to_mark_off_on_the_list[i].SetActive(true);
+            }
+        }
     }
 
 

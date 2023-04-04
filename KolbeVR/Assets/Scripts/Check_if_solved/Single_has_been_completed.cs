@@ -7,11 +7,17 @@ public class Single_has_been_completed : MonoBehaviour
 
     private GameObject check_op;
 
-
+    public string compare_string_value;
 
     // Start is called before the first frame update
     void Start()
     {
+
+        if (compare_string_value == null)
+        {
+            compare_string_value = "";
+        }
+
         check_op = GameObject.FindGameObjectWithTag("check_op_array");
 
 
@@ -37,7 +43,7 @@ public class Single_has_been_completed : MonoBehaviour
         if (check_op != null)
         {
 
-            check_op.GetComponent<Check_if_operational>().has_been_completed();
+            check_op.GetComponent<Check_if_operational>().has_been_completed(compare_string_value);
         }
     }
 }
