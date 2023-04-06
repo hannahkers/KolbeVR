@@ -15,6 +15,7 @@ TagManager:
   - lesser_end_point
   - better_end_point
   - check_op_array
+  - Whiteboard
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - Player
   - Interactable
   - Marker
-  - 
+  - Hide
   - 
   - 
   - 
