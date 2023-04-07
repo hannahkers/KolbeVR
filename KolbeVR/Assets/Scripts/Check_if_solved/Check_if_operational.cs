@@ -37,6 +37,7 @@ public class Check_if_operational : MonoBehaviour
     {
         check_has_been_complete = check_has_been_complete + 1;
         Check_if_done();
+        string_valuse(obj_name);
     }
 
     private void string_valuse(string obj_name)
