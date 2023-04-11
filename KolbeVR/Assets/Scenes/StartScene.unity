@@ -7634,10 +7634,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 517396868}
     m_Modifications:
+    - target: {fileID: 8283713560061523225, guid: 707a77701be1b4947af19a2eff3f03f0,
+        type: 3}
+      propertyPath: m_Name
+      value: Pause Options Menu Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8283713560061523225, guid: 707a77701be1b4947af19a2eff3f03f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8283713560266951509, guid: 707a77701be1b4947af19a2eff3f03f0,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8283713560307059551, guid: 707a77701be1b4947af19a2eff3f03f0,
+        type: 3}
+      propertyPath: m_Name
+      value: Pause Help Menu Panel
       objectReference: {fileID: 0}
     - target: {fileID: 8283713560307059551, guid: 707a77701be1b4947af19a2eff3f03f0,
         type: 3}
@@ -7648,6 +7663,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8283713560528943009, guid: 707a77701be1b4947af19a2eff3f03f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8283713560663040100, guid: 707a77701be1b4947af19a2eff3f03f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8283713560937339908, guid: 707a77701be1b4947af19a2eff3f03f0,
         type: 3}
