@@ -2610,7 +2610,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "1. (44 *3) / 66 =\n2. (4 + 8) * 3 / 9 = \n3. 10 * 9 - 81 = \n4. 12 / 4
+  m_text: "1. (4*8) / 16 = \n2. (4 + 8) * 3 / 9 = \n3. 10 * 9 - 81 = \n4. (12 / 4)
     * 2 = "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7199,6 +7199,11 @@ PrefabInstance:
       propertyPath: key
       value: 
       objectReference: {fileID: 1858589953}
+    - target: {fileID: 886301733164024759, guid: ec1c904992660cb43981374992b1f771,
+        type: 3}
+      propertyPath: correctCombination
+      value: 2496
+      objectReference: {fileID: 0}
     - target: {fileID: 886301733184684418, guid: ec1c904992660cb43981374992b1f771,
         type: 3}
       propertyPath: m_IsActive
