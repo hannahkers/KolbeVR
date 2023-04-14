@@ -16,6 +16,7 @@ TagManager:
   - better_end_point
   - check_op_array
   - Whiteboard
+  - stickyBlock
   layers:
   - Default
   - TransparentFX
