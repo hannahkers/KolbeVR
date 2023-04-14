@@ -19,7 +19,7 @@ public class Set_up : MonoBehaviour
      
         }
 
-        Set_up_method();
+        
     }
 
     // Update is called once per frame

@@ -40,7 +40,7 @@ public class MovingCube : MonoBehaviour
         if (CubetobeMoved.transform.position == Endzone.transform.position)
         {
             // Give reward/key Congratulations
-
+            this.gameObject.GetComponent<Single_has_been_completed>().activate_has_been_done();
             Debug.Log("congratulations");
         }
 
