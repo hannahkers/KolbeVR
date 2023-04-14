@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7267712543539295410}
   - component: {fileID: 7267712543539295411}
   - component: {fileID: 7267712543539295408}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ShortBlock (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
