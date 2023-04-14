@@ -14,16 +14,21 @@ public class Set_up : MonoBehaviour
         if(copy == null)
         {
             copy = this.gameObject;
+
+
+     
         }
+
+        Set_up_method();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
-    private void Set_up_method()
+    public void Set_up_method()
     {
         for (int x = 0; x < object_rows.x; x++)
         {
