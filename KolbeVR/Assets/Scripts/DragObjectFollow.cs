@@ -13,6 +13,7 @@ public class DragObjectFollow : MonoBehaviour
     private Vector2 xandy_dis = new Vector2(0,0);
     public Vector2 xandy_disrange = new Vector2(.2f, .2f);
 
+    public bool if_true_on_z_axis;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,8 +25,18 @@ public class DragObjectFollow : MonoBehaviour
     void Update()
     {
         caluate_dis();
-        caluate_xdis();
+        //caluate_xdis();
         caluate_ydis();
+
+        if(if_true_on_z_axis == false)
+        {
+            caluate_xdis();
+        }
+        else
+        {
+            caluate_zdis();
+        }
+
         if (dis < disrange && xandy_dis.x < xandy_disrange.x && xandy_dis.y < xandy_disrange.y)
         {
             movement();
@@ -44,6 +55,15 @@ public class DragObjectFollow : MonoBehaviour
     void caluate_dis()
     {
         dis = Vector3.Distance(this.transform.gameObject.transform.position, follow_obj.transform.position);
+    }
+
+    void caluate_zdis()
+    {
+        xandy_dis.x = this.transform.gameObject.transform.position.z - follow_obj.transform.position.z;
+        if (xandy_dis.x < 0)
+        {
+            xandy_dis.x = xandy_dis.x * -1;
+        }
     }
 
     void caluate_xdis()
@@ -68,8 +88,19 @@ public class DragObjectFollow : MonoBehaviour
     void movement()
     {
         update_this_object();
-        Follow_x_axis();
+        //Follow_x_axis();
         Follow_y_axis();
+        //Follow_z_axis();
+
+        if (if_true_on_z_axis == false)
+        {
+
+            Follow_x_axis();
+        }
+        else
+        {
+            Follow_z_axis();
+        }
     }
 
     void Follow_x_axis()
@@ -86,6 +117,20 @@ public class DragObjectFollow : MonoBehaviour
             this.transform.Translate(-speed * Time.deltaTime, 0, 0);
         }
 
+    }
+
+    void Follow_z_axis()
+    {
+        Xing = follow_obj.transform.position.z;
+
+        if (Xing > (here.z + range))
+        {
+            this.transform.Translate(speed * Time.deltaTime, 0, 0);
+        }
+        else if (Xing < (here.z - range))
+        {
+            this.transform.Translate(-speed * Time.deltaTime, 0, 0);
+        }
     }
 
     void Follow_y_axis()
